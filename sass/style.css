@@ -198,26 +198,45 @@ select {
   font-size: 0.8rem;
   font-weight: 600;
   margin: 1.2rem 0.6rem;
-  padding: 0.9rem 1.2rem;
+  padding: .8rem 1.65rem;
   cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid white;
+  opacity: .7;
 }
 
-.primaryNav ul li:hover,
+.primaryNav ul li:last-child {
+  margin-right: 0;
+}
+
+.primaryNav ul li:hover {
+  opacity: 1;
+}
+
 .primaryNav ul li.selected {
-  border: 1px solid #999;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  color: #fafafa;
+  background-color: #2d2640;
+  opacity: 1;
 }
 
 .callout {
   height: 37rem;
   background-color: #2d2640;
+  position: relative;
+  z-index: 0;
+}
+
+.callout #calloutTopTexture {
+  width: 100%;
+  height: 100%;
   background-image: url(/images/bg-pattern-intro-right-desktop.svg);
+  background-size: 24rem;
   background-repeat: no-repeat;
   background-position: top right;
+  position: absolute;
+  z-index: -2;
+  top: 0;
 }
 
 .calloutContents {
@@ -245,6 +264,14 @@ select {
   margin-top: 1.75rem;
 }
 
+#textureImage01 {
+  background-image: url(/images/bg-pattern-intro-left-desktop.svg);
+  width: 195px;
+  height: 504px;
+  position: absolute;
+  bottom: -90px;
+}
+
 #familyPhoto {
   background-image: url(/images/image-intro-desktop.jpg);
   background-repeat: no-repeat;
@@ -253,18 +280,12 @@ select {
   float: right;
   position: relative;
   top: 105px;
-  right: -16px;
+  right: -10px;
 }
 
 .cardSection {
   color: #2d2640;
   padding-top: 24rem;
-}
-
-.cardSectionContainer {
-  background-image: url(/images/bg-pattern-intro-left-desktop.svg);
-  background-repeat: no-repeat;
-  background-position: top left;
 }
 
 .cardSection h1 {
@@ -311,15 +332,28 @@ select {
   font-family: "DM Serif Display", serif;
 }
 
-.bannerSection {
-  background-color: #2d2640;
-}
-
 #bannerContents {
+  background-color: #2d2640;
   height: 15.5rem;
   clear: both;
   margin-top: 31rem;
   padding-top: 1px;
+  background-image: url(/images/bg-pattern-how-we-work-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  overflow: hidden;
+}
+
+#bannerContents h1 {
+  font-size: 3.2rem;
+  width: 450px;
+  margin: 4rem 0rem 4rem 5rem;
+  float: left;
+}
+
+#bannerContents button {
+  float: right;
+  margin: 6rem 5rem 6rem 0rem;
 }
 
 footer {
@@ -357,20 +391,28 @@ footer {
   background-repeat: no-repeat;
 }
 
+.socialMediaIcons .socialMediaIcon:hover {
+  opacity: 1 !important;
+}
+
 .socialMediaIcons #facebook {
   background-image: url(/images/icon-facebook.svg);
+  opacity: .8;
 }
 
 .socialMediaIcons #twitter {
   background-image: url(/images/icon-twitter.svg);
+  opacity: .8;
 }
 
 .socialMediaIcons #pinterest {
   background-image: url(/images/icon-pinterest.svg);
+  opacity: .8;
 }
 
 .socialMediaIcons #instagram {
   background-image: url(/images/icon-instagram.svg);
+  opacity: .8;
 }
 
 .secondaryNavList {
@@ -401,18 +443,20 @@ h1 {
   letter-spacing: -0.05rem;
 }
 
-.button {
-  border: 1px solid #999;
-}
-
 button {
   text-transform: uppercase;
-  padding: 1rem 2rem;
+  padding: .8rem 1.65rem;
   border: 1px solid #fafafa;
   background: rgba(0, 0, 0, 0);
   color: #fafafa;
   letter-spacing: 0.2rem;
   font-size: 0.75rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fafafa;
+  color: #2d2640;
 }
 
 #logo {

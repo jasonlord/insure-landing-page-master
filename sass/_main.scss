@@ -1,262 +1,303 @@
-* {
-    font-family: $primaryFont;
-}
-
-.calloutContents,
-.primaryHeader,
-.cardSection,
-#bannerContents,
-.footerContents {
-    max-width: $containerWidth;
-    margin: 0 auto;
-}
-
-
-/* Sections */
-
-.primaryNav {
-    height: 5rem;
-}
-
-.primaryNav ul {
-    float: right;
-}
-
-.primaryNav ul li {
-    float: left;
-    list-style-type: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin: 1.2rem 0.6rem;
-    padding: 0.9rem 1.2rem;
-    cursor: pointer;
-    box-sizing: border-box;
-    border: 1px solid white;
-}
-
-.primaryNav ul li:hover,
-.primaryNav ul li.selected {
-    border: 1px solid #999;
-    box-sizing: border-box;
-}
-
-.callout {
-    height: 37rem;
-    background-color: $primaryViolet;
-    background-image: url(/images/bg-pattern-intro-right-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: top right;
-}
-
-.calloutContents {
-    height: 37rem;
-}
-
-.calloutContents h1 {
-    padding-top: 10.5rem;
-    max-width: 32rem;
-    width: 50%;
-    float: left;
-}
-
-.calloutContents p {
-    margin-top: 1.8rem;
-    max-width: 34rem;
-    color: $neutralLightGray;
-    line-height: 1.6rem;
-    float: left;
-    width: 50%;
-}
-
-.calloutContents button {
-    float: left;
-    margin-top: 1.75rem;
-}
-
-#familyPhoto {
-    background-image: url(/images/image-intro-desktop.jpg);
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 650px;
-    float: right;
-    position: relative;
-    top: 105px;
-    right: -16px;
-}
-
-.cardSection {
-    color: $primaryViolet;
-    padding-top: 24rem;
-}
-
-.cardSectionContainer {
-    background-image: url(/images/bg-pattern-intro-left-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: top left;
-}
-
-.cardSection h1 {
-    color: $primaryViolet;
-}
-
-.cardItem {
-    list-style-type: none;
-    width: 33.33333%;
-    float: left;
-}
-
-.cardItem#snappyProcess {
-    background-image: url(/images/icon-snappy-process.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 90px;
-}
-
-.cardItem#affordablePrices {
-    background-image: url(/images/icon-affordable-prices.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 90px;
-}
-
-.cardItem#peopleFirst {
-    background-image: url(/images/icon-people-first.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 90px;
-}
-
-.cardItem h2 {
-    font-family: $headlineFont;
-    font-size: 1.66rem;
-}
-
-.cardItem p {
-    margin-top: 1.25rem;
-    line-height: 1.5rem;
-    width: 97%;
-}
-
-.cardSection .cardItem {
-    padding-top: 13.5rem;
-    font-family: $headlineFont;
-}
-
-.bannerSection {
-    background-color: $primaryViolet;
-}
-
-#bannerContents {
-    height: 15.5rem;
-    clear: both;
-    margin-top: 31rem;
-    padding-top: 1px;
-}
-
-footer {
-    margin-top: 9.5rem;
-    background-color: $neutralLightGray;
-    overflow: hidden;
-    padding-bottom: 6rem;
-    background-image: url(/images/bg-pattern-footer-desktop.svg);
-    background-repeat: no-repeat;
-}
-
-.footerContents #logo {
-    margin-top: 4.25rem;
-    float: left;
-}
-
-.footerTopSection {
-    border-bottom: 1px solid gray;
-    padding-bottom: 2.2rem;
-    overflow: hidden;
-}
-
-.socialMediaIcons li {
-    float: right;
-    list-style-type: none;
-    width: 24px;
-    height: 24px;
-    padding: 6px;
-    background-position: center center;
-    margin-top: 3.5rem;
-    cursor: pointer;
-}
-
-.socialMediaIcon {
-    background-repeat: no-repeat;
-}
-
-.socialMediaIcons #facebook {
-    background-image: url(/images/icon-facebook.svg);
-}
-
-.socialMediaIcons #twitter {
-    background-image: url(/images/icon-twitter.svg);
-}
-
-.socialMediaIcons #pinterest {
-    background-image: url(/images/icon-pinterest.svg);
-}
-
-.socialMediaIcons #instagram {
-    background-image: url(/images/icon-instagram.svg);
-}
-
-.secondaryNavList {
-    margin-top: 1.8rem;
-    float: left;
-    width: 25%;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 0.125rem;
-}
-
-.secondaryNavList li {
-    margin-top: 1rem;
-    cursor: pointer;
-}
-
-.secondaryNavList li:nth-child(2) {
-    margin-top: 2.9rem;
-}
-
-
-/* Shared Componenents */
-
-h1 {
-    font-size: 4.43rem;
-    font-family: $headlineFont;
-    color: $neutralLightGray;
-    font-weight: 400;
-    line-height: 4rem;
-    letter-spacing: -0.05rem;
-}
-
-.button {
-    border: 1px solid #999;
-}
-
-button {
-    text-transform: uppercase;
-    padding: 1rem 2rem;
-    border: 1px solid $neutralLightGray;
-    background: rgba(0, 0, 0, 0);
-    color: $neutralLightGray;
-    letter-spacing: 0.2rem;
-    font-size: 0.75rem;
-}
-
-#logo {
-    background-image: url(/images/logo.svg);
-    width: 112px;
-    height: 18px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-}
-
-.primaryHeader #logo {
-    height: 5rem;
-    float: left;
-}
+        * {
+            font-family: $primaryFont;
+        }
+        
+        .calloutContents,
+        .primaryHeader,
+        .cardSection,
+        #bannerContents,
+        .footerContents {
+            max-width: $containerWidth;
+            margin: 0 auto;
+        }
+        /* Sections */
+        
+        .primaryNav {
+            height: 5rem;
+        }
+        
+        .primaryNav ul {
+            float: right;
+        }
+        
+        .primaryNav ul li {
+            float: left;
+            list-style-type: none;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin: 1.2rem 0.6rem;
+            padding: .8rem 1.65rem;
+            cursor: pointer;
+            box-sizing: border-box;
+            border: 1px solid white;
+            opacity: .7
+        }
+        
+        .primaryNav ul li:last-child {
+            margin-right: 0;
+        }
+        
+        .primaryNav ul li:hover {
+            opacity: 1
+        }
+        
+        .primaryNav ul li.selected {
+            color: $neutralLightGray;
+            background-color: $primaryViolet;
+            opacity: 1
+        }
+        
+        .callout {
+            height: 37rem;
+            background-color: $primaryViolet;
+            position: relative;
+            z-index: 0;
+        }
+        
+        .callout #calloutTopTexture {
+            width: 100%;
+            height: 100%;
+            background-image: url(/images/bg-pattern-intro-right-desktop.svg);
+            background-size: 24rem;
+            background-repeat: no-repeat;
+            background-position: top right;
+            position: absolute;
+            z-index: -2;
+            top: 0;
+        }
+        
+        .calloutContents {
+            height: 37rem;
+        }
+        
+        .calloutContents h1 {
+            padding-top: 10.5rem;
+            max-width: 32rem;
+            width: 50%;
+            float: left;
+        }
+        
+        .calloutContents p {
+            margin-top: 1.8rem;
+            max-width: 34rem;
+            color: $neutralLightGray;
+            line-height: 1.6rem;
+            float: left;
+            width: 50%;
+        }
+        
+        .calloutContents button {
+            float: left;
+            margin-top: 1.75rem;
+        }
+        
+        #textureImage01 {
+            background-image: url(/images/bg-pattern-intro-left-desktop.svg);
+            width: 195px;
+            height: 504px;
+            position: absolute;
+            bottom: -90px
+        }
+        
+        #familyPhoto {
+            background-image: url(/images/image-intro-desktop.jpg);
+            background-repeat: no-repeat;
+            width: 50%;
+            height: 650px;
+            float: right;
+            position: relative;
+            top: 105px;
+            right: -10px;
+        }
+        
+        .cardSection {
+            color: $primaryViolet;
+            padding-top: 24rem;
+        }
+        
+        .cardSectionContainer {}
+        
+        .cardSection h1 {
+            color: $primaryViolet;
+        }
+        
+        .cardItem {
+            list-style-type: none;
+            width: 33.33333%;
+            float: left;
+        }
+        
+        .cardItem#snappyProcess {
+            background-image: url(/images/icon-snappy-process.svg);
+            background-repeat: no-repeat;
+            background-position: 0px 90px;
+        }
+        
+        .cardItem#affordablePrices {
+            background-image: url(/images/icon-affordable-prices.svg);
+            background-repeat: no-repeat;
+            background-position: 0px 90px;
+        }
+        
+        .cardItem#peopleFirst {
+            background-image: url(/images/icon-people-first.svg);
+            background-repeat: no-repeat;
+            background-position: 0px 90px;
+        }
+        
+        .cardItem h2 {
+            font-family: $headlineFont;
+            font-size: 1.66rem;
+        }
+        
+        .cardItem p {
+            margin-top: 1.25rem;
+            line-height: 1.5rem;
+            width: 97%;
+        }
+        
+        .cardSection .cardItem {
+            padding-top: 13.5rem;
+            font-family: $headlineFont;
+        }
+        
+        #bannerContents {
+            background-color: $primaryViolet;
+            height: 15.5rem;
+            clear: both;
+            margin-top: 31rem;
+            padding-top: 1px;
+            background-image: url(/images/bg-pattern-how-we-work-desktop.svg);
+            background-repeat: no-repeat;
+            background-position: right center;
+            overflow: hidden;
+            h1 {
+                font-size: 3.2rem;
+                width: 450px;
+                margin: 4rem 0rem 4rem 5rem;
+                float: left
+            }
+            button {
+                float: right;
+                margin: 6rem 5rem 6rem 0rem;
+            }
+        }
+        
+        footer {
+            margin-top: 9.5rem;
+            background-color: $neutralLightGray;
+            overflow: hidden;
+            padding-bottom: 6rem;
+            background-image: url(/images/bg-pattern-footer-desktop.svg);
+            background-repeat: no-repeat;
+        }
+        
+        .footerContents #logo {
+            margin-top: 4.25rem;
+            float: left;
+        }
+        
+        .footerTopSection {
+            border-bottom: 1px solid gray;
+            padding-bottom: 2.2rem;
+            overflow: hidden;
+        }
+        
+        .socialMediaIcons li {
+            float: right;
+            list-style-type: none;
+            width: 24px;
+            height: 24px;
+            padding: 6px;
+            background-position: center center;
+            margin-top: 3.5rem;
+            cursor: pointer;
+        }
+        
+        .socialMediaIcon {
+            background-repeat: no-repeat;
+        }
+        
+        .socialMediaIcons .socialMediaIcon:hover {
+            opacity: 1!important;
+        }
+        
+        .socialMediaIcons #facebook {
+            background-image: url(/images/icon-facebook.svg);
+            opacity: .8;
+        }
+        
+        .socialMediaIcons #twitter {
+            background-image: url(/images/icon-twitter.svg);
+            opacity: .8;
+        }
+        
+        .socialMediaIcons #pinterest {
+            background-image: url(/images/icon-pinterest.svg);
+            opacity: .8;
+        }
+        
+        .socialMediaIcons #instagram {
+            background-image: url(/images/icon-instagram.svg);
+            opacity: .8;
+        }
+        
+        .secondaryNavList {
+            margin-top: 1.8rem;
+            float: left;
+            width: 25%;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.125rem;
+        }
+        
+        .secondaryNavList li {
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+        
+        .secondaryNavList li:nth-child(2) {
+            margin-top: 2.9rem;
+        }
+        /* Shared Componenents */
+        
+        h1 {
+            font-size: 4.43rem;
+            font-family: $headlineFont;
+            color: $neutralLightGray;
+            font-weight: 400;
+            line-height: 4rem;
+            letter-spacing: -0.05rem;
+        }
+        
+        button {
+            text-transform: uppercase;
+            padding: .8rem 1.65rem;
+            border: 1px solid $neutralLightGray;
+            background: rgba(0, 0, 0, 0);
+            color: $neutralLightGray;
+            letter-spacing: 0.2rem;
+            font-size: 0.75rem;
+            cursor: pointer
+        }
+        
+        button:hover {
+            background-color: $neutralLightGray;
+            color: $primaryViolet
+        }
+        
+        #logo {
+            background-image: url(/images/logo.svg);
+            width: 112px;
+            height: 18px;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+        }
+        
+        .primaryHeader #logo {
+            height: 5rem;
+            float: left;
+        }
