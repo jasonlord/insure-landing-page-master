@@ -235,7 +235,7 @@ select {
   background-repeat: no-repeat;
   background-position: top right;
   position: absolute;
-  z-index: -2;
+  z-index: 2;
   top: 0;
 }
 
