@@ -14,6 +14,15 @@
 
 /* Sections */
 
+#hamburgerButton {
+    display: none;
+    background-image: url(/images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 34px;
+    width: 34px;
+}
+
 .primaryNav {
     height: 5rem;
     ul {
@@ -293,4 +302,167 @@ button:hover {
 .primaryHeader #logo {
     height: 5rem;
     float: left;
+}
+
+@media (min-width: 769px) and (max-width: $containerWidth+50px) {
+    /* properties that only apply to tablets */
+    .primaryHeader {
+        #logo {
+            margin-left: 2rem;
+        }
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    /* properties that only apply to tablets */
+}
+
+@media (max-width: 501px) {
+    h1,
+    h2 {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        float: none;
+        display: static;
+    }
+    /* properties that only apply to phones */
+    .primaryHeader {
+        overflow: hidden;
+        #logo {
+            margin-left: 2rem;
+        }
+        #hamburgerButton {
+            display: block;
+            float: right;
+            margin-top: 1.5rem;
+            margin-right: 0.8rem;
+        }
+        .primaryNav {
+            display: none;
+        }
+    }
+    .callout {
+        overflow: hidden;
+        height: auto;
+        .calloutContents {
+            overflow: hidden;
+            height: auto;
+            h1 {
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+                float: none;
+            }
+            #familyPhoto {
+                width: 100%;
+                float: none;
+                height: 540px;
+                margin: 0;
+                position: static;
+                background-size: contain;
+            }
+            h1 {
+                margin-top: 0;
+                padding-top: 0;
+            }
+            p {
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+                float: none;
+                margin-top: 1rem;
+                line-height: 2rem;
+            }
+            button {
+                float: none;
+                margin: 0 auto;
+                display: block;
+                margin-top: 2rem;
+                margin-bottom: 6rem;
+            }
+        }
+    }
+    .cardSection {
+        padding-top: 0;
+        h1 {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 8rem;
+            display: block;
+            float: none;
+        }
+        .cardItem {
+            width: 90%;
+            float: none;
+            margin: 0 auto;
+            h2 {
+                width: 80%;
+            }
+            p {
+                text-align: center;
+            }
+        }
+        #snappyProcess {
+            background-image: url(/images/icon-snappy-process.svg);
+            background-repeat: no-repeat;
+            background-position: center 100px;
+        }
+        #affordablePrices {
+            background-image: url(/images/icon-affordable-prices.svg);
+            background-repeat: no-repeat;
+            background-position: center 100px;
+        }
+        #peopleFirst {
+            background-image: url(/images/icon-people-first.svg);
+            background-repeat: no-repeat;
+            background-position: center 100px;
+        }
+    }
+    #bannerContents {
+        margin-top: 6rem;
+        height: auto;
+        h1 {
+            text-align: center;
+            float: none;
+            margin: 3rem;
+            width: auto;
+            font-size: 2.4rem;
+            font-weight: 100;
+        }
+        button {
+            float: none;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 6rem;
+        }
+    }
+    footer {
+        margin-top: 8rem;
+        .footerContents #logo {
+            float: none;
+            margin: 0 auto;
+            margin-top: 5rem;
+        }
+        .socialMediaIcons {
+            float: none;
+            width: 144px;
+            margin: 0 auto;
+            margin-top: 0rem;
+            li {
+                margin-top: 1.5rem;
+            }
+        }
+        .secondaryNavList {
+            float: none;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            li {
+                float: none;
+            }
+        }
+    }
 }
