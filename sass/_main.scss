@@ -258,6 +258,11 @@ footer {
     li {
         margin-top: 1rem;
         cursor: pointer;
+        font-weight: 900;
+        color: $neutralViolet;
+    }
+    li:first-child {
+        font-weight: 200;
     }
     li:nth-child(2) {
         margin-top: 2.9rem;

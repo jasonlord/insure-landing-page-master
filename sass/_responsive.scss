@@ -10,7 +10,16 @@
     }
 }
 
-@media (min-width: 501px) and (max-width: 890px) {}
+@media (min-width: 501px) and (max-width: 890px) {
+    .primaryHeader {
+        #logo {
+            margin-left: 2rem;
+        }
+    }
+    .primaryNav {
+        margin-right: 2rem;
+    }
+}
 
 @media (max-width: 500px) {
     h1,
