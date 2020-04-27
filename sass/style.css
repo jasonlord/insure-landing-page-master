@@ -195,6 +195,10 @@ select {
   width: 34px;
 }
 
+#hamburgerButton.closed {
+  background-image: url(/images/icon-close.svg);
+}
+
 .primaryNav {
   height: 5rem;
 }
@@ -537,9 +541,50 @@ button:hover {
     float: right;
     margin-top: 1.5rem;
     margin-right: 0.8rem;
+    outline: none;
   }
   .primaryHeader .primaryNav {
-    display: none;
+    clear: both;
+    overflow: hidden;
+    -webkit-transition-property: height;
+    transition-property: height;
+    -webkit-transition-duration: 800ms;
+            transition-duration: 800ms;
+    -webkit-transition-timing-function: cubic-bezier(0.655, 0.01, 0.325, 1.005);
+            transition-timing-function: cubic-bezier(0.655, 0.01, 0.325, 1.005);
+    height: 0;
+    background-color: #2d2640;
+    background-image: url(/images/bg-pattern-mobile-nav.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+  }
+  .primaryHeader .primaryNav ul {
+    color: white;
+    float: none;
+    text-align: center;
+  }
+  .primaryHeader .primaryNav ul li {
+    line-height: 2rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    padding: 1rem 1rem;
+    margin: 1rem 3rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    float: none;
+    box-sizing: border-box;
+  }
+  .primaryHeader .primaryNav ul li:hover,
+  .primaryHeader .primaryNav ul li.selected {
+    border: 1px solid white;
+  }
+  .primaryHeader #dropDownMenu ul li:nth-child(odd) {
+    background-color: aliceblue;
+  }
+  .primaryHeader .primaryNav.expand {
+    height: 100vh;
   }
   .callout {
     overflow: visible;

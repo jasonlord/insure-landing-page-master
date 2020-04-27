@@ -43,9 +43,46 @@
             float: right;
             margin-top: 1.5rem;
             margin-right: 0.8rem;
+            outline: none;
         }
         .primaryNav {
-            display: none;
+            clear: both;
+            overflow: hidden;
+            transition-property: height;
+            transition-duration: 800ms;
+            transition-timing-function: cubic-bezier(0.655, 0.01, 0.325, 1.005);
+            height: 0;
+            background-color: #2d2640;
+            background-image: url(/images/bg-pattern-mobile-nav.svg);
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: 100%;
+            ul {
+                color: white;
+                float: none;
+                text-align: center;
+            }
+            ul li {
+                line-height: 2rem;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                padding: 1rem 1rem;
+                margin: 1rem 3rem;
+                box-sizing: border-box;
+                float: none;
+                box-sizing: border-box;
+            }
+            ul li:hover,
+            ul li.selected {
+                border: 1px solid white;
+            }
+        }
+        #dropDownMenu ul li:nth-child(odd) {
+            background-color: aliceblue;
+        }
+        .primaryNav.expand {
+            height: 100vh;
         }
     }
     .callout {

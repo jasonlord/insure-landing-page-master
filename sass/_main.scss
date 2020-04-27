@@ -23,6 +23,10 @@
     width: 34px;
 }
 
+#hamburgerButton.closed {
+    background-image: url(/images/icon-close.svg);
+}
+
 .primaryNav {
     height: 5rem;
     ul {
