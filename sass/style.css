@@ -576,7 +576,6 @@ button:hover {
     float: none;
     box-sizing: border-box;
   }
-  .primaryHeader .primaryNav ul li:hover,
   .primaryHeader .primaryNav ul li.selected {
     border: 1px solid white;
   }
