@@ -277,6 +277,10 @@ select {
   margin-top: 1.75rem;
 }
 
+.calloutContents #mobileTextureImage {
+  display: none;
+}
+
 #textureImage01 {
   background-image: url(/images/bg-pattern-intro-left-desktop.svg);
   width: 195px;
@@ -384,7 +388,6 @@ footer {
 }
 
 .footerTopSection {
-  border-bottom: 1px solid gray;
   padding-bottom: 2.2rem;
   overflow: hidden;
 }
@@ -410,17 +413,17 @@ footer {
 
 .socialMediaIcons #facebook {
   background-image: url(/images/icon-facebook.svg);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .socialMediaIcons #twitter {
   background-image: url(/images/icon-twitter.svg);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .socialMediaIcons #pinterest {
   background-image: url(/images/icon-pinterest.svg);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .socialMediaIcons #instagram {
@@ -513,7 +516,7 @@ button:hover {
     overflow: hidden;
   }
   .primaryHeader #logo {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
   }
   .primaryHeader #hamburgerButton {
     display: block;
@@ -525,15 +528,33 @@ button:hover {
     display: none;
   }
   .callout {
-    overflow: hidden;
+    overflow: visible;
     height: auto;
+  }
+  .callout #calloutTopTexture {
+    display: none;
+  }
+  .callout #textureImage01 {
+    display: none;
+  }
+  .callout #mobileTextureImage {
+    background-image: url(/images/bg-pattern-intro-right-mobile.svg);
+    width: 124px;
+    height: 330px;
+    display: block;
+    position: absolute;
+    bottom: -175px;
+    right: 0;
   }
   .callout .calloutContents {
     overflow: hidden;
     height: auto;
+    background-image: url(/images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 450px;
   }
   .callout .calloutContents h1 {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: block;
     float: none;
@@ -544,19 +565,21 @@ button:hover {
     height: 540px;
     margin: 0;
     position: static;
-    background-size: contain;
+    background-size: cover;
   }
   .callout .calloutContents h1 {
-    margin-top: 0;
+    margin-top: 0.4rem;
     padding-top: 0;
+    line-height: 3rem;
+    letter-spacing: 0.05rem;
   }
   .callout .calloutContents p {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     text-align: center;
     float: none;
     margin-top: 1rem;
-    line-height: 2rem;
+    line-height: 1.6rem;
   }
   .callout .calloutContents button {
     float: none;
@@ -569,63 +592,96 @@ button:hover {
     padding-top: 0;
   }
   .cardSection h1 {
-    width: 80%;
+    width: 89%;
     margin: 0 auto;
-    margin-top: 8rem;
+    margin-top: 8.6rem;
+    padding-top: 2.8rem;
     display: block;
     float: none;
+    letter-spacing: 0.05rem;
+  }
+  .cardSection h1:before {
+    content: "";
+    border: 1px solid #bbb;
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    position: relative;
+    top: -45px;
   }
   .cardSection .cardItem {
     width: 90%;
     float: none;
     margin: 0 auto;
+    padding-top: 12.2rem;
   }
   .cardSection .cardItem h2 {
     width: 80%;
   }
   .cardSection .cardItem p {
     text-align: center;
+    width: 95%;
+    margin-top: 0.8rem;
   }
   .cardSection #snappyProcess {
     background-image: url(/images/icon-snappy-process.svg);
     background-repeat: no-repeat;
-    background-position: center 100px;
+    background-position: center 80px;
   }
   .cardSection #affordablePrices {
     background-image: url(/images/icon-affordable-prices.svg);
     background-repeat: no-repeat;
-    background-position: center 100px;
+    background-position: center 60px;
+  }
+  .cardSection #affordablePrices h2 {
+    margin-top: -1.1rem;
   }
   .cardSection #peopleFirst {
     background-image: url(/images/icon-people-first.svg);
     background-repeat: no-repeat;
-    background-position: center 100px;
+    background-position: center 60px;
+  }
+  .cardSection #peopleFirst h2 {
+    margin-top: -1.1rem;
   }
   #bannerContents {
-    margin-top: 6rem;
+    background-image: url(/images/bg-pattern-how-we-work-mobile.svg);
+    background-position: right top;
+    margin: 9rem 1.5rem 3rem 1.5rem;
     height: auto;
   }
   #bannerContents h1 {
     text-align: center;
     float: none;
-    margin: 3rem;
+    margin: 1rem;
     width: auto;
     font-size: 2.4rem;
     font-weight: 100;
+    margin-top: 4.25rem;
+    line-height: 2.6rem;
   }
   #bannerContents button {
     float: none;
     margin: 0 auto;
     display: block;
-    margin-bottom: 6rem;
+    margin-bottom: 4.75rem;
+    margin-top: 2.25rem;
   }
   footer {
-    margin-top: 8rem;
+    margin-top: 8.75rem;
+    background-image: url(/images/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+  }
+  footer .mobileBorder {
+    height: 1px;
+    border-top: 1px solid #837d87;
+    width: 85%;
+    margin: 0 auto;
   }
   footer .footerContents #logo {
     float: none;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 5.5rem;
   }
   footer .socialMediaIcons {
     float: none;
@@ -641,9 +697,15 @@ button:hover {
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    margin-top: 2.5rem;
   }
   footer .secondaryNavList li {
+    color: #2b272f;
     float: none;
+    font-weight: 900;
+  }
+  footer .secondaryNavList li:first-child {
+    font-weight: 200;
   }
 }
 /*# sourceMappingURL=style.css.map */
