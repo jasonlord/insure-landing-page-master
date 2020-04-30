@@ -1,7 +1,7 @@
 @media (min-width: 787px) and (max-width: $containerWidth+50px) {
     /* properties that only apply to tablets */
     .primaryHeader {
-        #logo {
+        .logo {
             margin-left: 2rem;
         }
     }
@@ -39,7 +39,7 @@
     /* properties that only apply to phones */
     .primaryHeader {
         overflow: hidden;
-        #logo {
+        .logo {
             margin-left: 1.5rem;
         }
         #hamburgerButton {
@@ -238,7 +238,7 @@
             width: 85%;
             margin: 0 auto;
         }
-        .footerContents #logo {
+        .footerContents .logo {
             float: none;
             margin: 0 auto;
             margin-top: 5.5rem;

@@ -388,7 +388,7 @@ footer {
           box-shadow: 0px 8px 8px 0px rgba(109, 109, 122, 0.43);
 }
 
-.footerContents #logo {
+.footerContents .logo {
   margin-top: 4.25rem;
   float: left;
 }
@@ -487,7 +487,7 @@ button:hover {
   color: #2d2640;
 }
 
-#logo {
+.logo {
   background-image: url(/images/logo.svg);
   width: 112px;
   height: 18px;
@@ -496,14 +496,14 @@ button:hover {
   cursor: pointer;
 }
 
-.primaryHeader #logo {
+.primaryHeader .logo {
   height: 5rem;
   float: left;
 }
 
 @media (min-width: 787px) and (max-width: 1150px) {
   /* properties that only apply to tablets */
-  .primaryHeader #logo {
+  .primaryHeader .logo {
     margin-left: 2rem;
   }
   .primaryNav {
@@ -535,7 +535,7 @@ button:hover {
   .primaryHeader {
     overflow: hidden;
   }
-  .primaryHeader #logo {
+  .primaryHeader .logo {
     margin-left: 1.5rem;
   }
   .primaryHeader #hamburgerButton {
@@ -738,7 +738,7 @@ button:hover {
     width: 85%;
     margin: 0 auto;
   }
-  footer .footerContents #logo {
+  footer .footerContents .logo {
     float: none;
     margin: 0 auto;
     margin-top: 5.5rem;
