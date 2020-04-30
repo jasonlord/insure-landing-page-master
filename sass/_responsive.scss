@@ -1,4 +1,4 @@
-@media (min-width: 891px) and (max-width: $containerWidth+50px) {
+@media (min-width: 787px) and (max-width: $containerWidth+50px) {
     /* properties that only apply to tablets */
     .primaryHeader {
         #logo {
@@ -8,16 +8,20 @@
     .primaryNav {
         margin-right: 2rem;
     }
-}
-
-@media (min-width: 787px) and (max-width: 890px) {
-    .primaryHeader {
-        #logo {
-            margin-left: 2rem;
+    .callout {
+        .calloutContents {
+            margin: 0 2rem;
         }
     }
-    .primaryNav {
-        margin-right: 2rem;
+    .cardSectionContainer {
+        .cardSection {
+            margin: 0 2rem;
+        }
+    }
+    footer {
+        .footerContents {
+            margin: 0 2rem;
+        }
     }
 }
 
